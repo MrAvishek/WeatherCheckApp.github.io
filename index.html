@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather</title>
+    <link rel="stylesheet" href="file.css" />
+  </head>
+  <body>
+    <!-- <video id="video-background" autoplay muted loop src="video/pexels-ghazi-hussain-hydri-5357059 (1080p).mp4"></video> -->
+    <nav>
+      <ul>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#Links">GoTo</a></li>
+        <li><a href="#about">About</a></li>
+        <form>
+          <label for="search">Search</label>
+          <input
+            value=" "
+            id="searchBar"
+            type="search"
+            pattern=".*\S.*"
+            required
+          />
+          <span class="caret"></span>
+        </form>
+      </ul>
+    </nav>
+    <div class="sear">
+      <p id="cty">Search City</p>
+      <p>
+        latitude: <span id="la">x </span>, longitude : <span id="lo">y </span>
+      </p>
+    </div>
+    <div class="body-part">
+      <div id="card">
+        <p id="temperature">Temperature <span id="val"> x </span> degree</p>
+        <p>Feels Like <span id="feels"></span> d</p>
+        <p>wind speed : <span id="wind"> </span> KMPH</p>
+        <p>Humidity <span id="hum"> </span></p>
+      </div>
+      <div class="body-part">
+        <div id="other-details">
+          <p id="tm">Time</p>
+          <p>sunrise : <span id="rise"></span></p>
+          <p>sunset : <span id="set"></span></p>
+        </div>
+      </div>
+      <div class="overall_status"><h2 id="result">Status</h2></div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"
+    integrity="sha512-CryKbMe7sjSCDPl18jtJI5DR5jtkUWxPXWaLCst6QjH8wxDexfRJic2WRmRXmstr2Y8SxDDWuBO6CQC6IE4KTA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="weatherScript.js"></script>
+</html>
